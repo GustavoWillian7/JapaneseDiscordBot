@@ -3,7 +3,7 @@ const connectDB = require('./db/conn');
 const characterController = require('./controllers/characterController');
 
 require('dotenv').config();
-const TOKEN = process.env.BOT_TOKEN; // Certifique-se de que o nome da variável corresponde ao configurado no Vercel
+const TOKEN = process.env.BOT_TOKEN;
 
 const client = new Client({ 
     intents: [
@@ -33,3 +33,8 @@ client.on('messageCreate', async message => {
 });
 
 client.login(TOKEN);
+
+// Exporta uma função simples
+module.exports = () => {
+    return 'Hello from Japanese Discord Bot!';
+};
