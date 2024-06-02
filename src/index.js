@@ -3,7 +3,7 @@ const connectDB = require('./db/conn');
 const characterController = require('./controllers/characterController');
 
 require('dotenv').config({ path: '.env' });
-const TOKEN = process.env.BOT_TOKEN;
+const TOKEN = process.env.bot_token;
 
 const client = new Client({ 
     intents: [
