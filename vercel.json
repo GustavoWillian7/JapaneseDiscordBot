@@ -1,11 +1,15 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "src/index.js", "use": "@vercel/node" }
-    ],
-    "env": {
-      "BOT_TOKEN": "@bot_token",
-      "MONGODB_URI": "@mongodb_uri"
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@vercel/node"
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/index.js"
+    }
+  ]
 }
-  

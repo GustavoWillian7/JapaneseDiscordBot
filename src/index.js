@@ -2,8 +2,8 @@ const { Client, GatewayIntentBits } = require('discord.js');
 const connectDB = require('./db/conn');
 const characterController = require('./controllers/characterController');
 
-require('dotenv').config({ path: '.env' });
-const TOKEN = process.env.bot_token;
+require('dotenv').config();
+const TOKEN = process.env.BOT_TOKEN; // Certifique-se de que o nome da variável corresponde ao configurado no Vercel
 
 const client = new Client({ 
     intents: [
