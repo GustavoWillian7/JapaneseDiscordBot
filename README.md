@@ -4,7 +4,7 @@ Repositório de um chatbox feito para o aplicativo Discord utilizando Node.js, c
 
 ## Demonstração
 
-![Bot em funcionamento](docs/japanese-discord-bot.jpg)
+![Bot em funcionamento](src/docs/japanese-discord-bot.jpg)
 
 ## Visão geral
 
